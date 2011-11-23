@@ -1,0 +1,168 @@
+snippet ready
+	$(document).ready(function() {
+
+		${1://all the jquery code!}
+
+	});
+
+snippet $
+	$('${1}')
+
+snippet .click
+	.click(function() {
+		${1://what is to happen when you click}
+	});
+
+snippet .fadeIn #1
+	.fadeIn('${1:slow/fast/800}')
+
+snippet .fadeIn with callback #2
+	.fadeIn('${1:slow/fast/800}', function() {
+		${2:// stuff to do *after* the animation takes place}
+	});
+
+snippet .fadeOut #1
+	.fadeOut('${1:slow/fast/800}')
+
+snippet .fadeOut with callback #2
+	.fadeOut('${1:slow/fast/800}', function() {
+		${2:// stuff to do *after* the animation takes place}
+	});
+
+snippet .addClass
+	.addClass('${1:class name}')
+
+snippet .animate
+	.animate({${1:param1: value1, param2: value2}}, ${2:speed})
+
+snippet .append
+	.append('${1:Some text <b>and bold!</b>}')
+
+snippet .appendTo
+	.appendTo('${1:selector expression}')
+
+snippet .attr #1
+	.attr('${1:attribute}', '${2: value}')
+
+snippet .attr map #2
+	.attr({'${1:attribute1}': '${2:value1}', '${3:attribute2}': '${4:value2}'})
+
+snippet .before
+	.before('${1:Some text <b>and bold!</b>}')
+
+snippet .bind
+	.bind('${1:event name}', function(${2:event}) {
+		${3:// Act on the event}
+	});
+
+snippet .blur
+	.blur(function() {
+		${1:// Act on the event}
+	});
+
+snippet .change
+	.change(function() {
+		${1:// act on the event}
+	});
+
+snippet .children
+	.children('${1:selector expression}')
+
+snippet .clone
+	.clone()${1}
+
+snippet .contains
+	.contains('${1:text to find}')
+
+snippet .css #1
+	.css('${1:attribute}', '${2:value}')
+
+snippet .css hash #2
+	.css({${1:attribute1}: '${2:value1}', ${3:attribute2}: '${4:value2}'})
+
+snippet .dblclick
+	.dblclick(function() {
+		${1:// act on the event}
+	});
+
+snippet .each
+	.each(function(index) {
+		${1:this.innerHTML = this + " is the element, " + index + " is the position";}
+	});
+
+snippet .end
+	.end()${1}
+
+snippet .error
+	.error(function() {
+		${1:// act on the event}
+	});
+
+snippet .fadeTo #1
+	.fadeTo('${1:slow/fast/800}', ${2:0.5})
+
+snippet .fadeTo with callback #2
+	.fadeTo('${1:slow/fast/800}', ${2:0.5}, function() {
+		${3:// stuff to do *after* the animation takes place}
+	});
+
+snippet .filter
+	.filter('${1:selector expression}')
+
+snippet .find
+	.find('${1:selector expression}')
+
+snippet .focus
+	.focus(function() {
+		${1:// act on the event}
+	});
+
+snippet .get
+	.get(${1:element index})
+
+snippet .height
+	.height(${1:integer})
+
+snippet .hide #1
+	.hide('${1:slow/fast/800}')
+
+snippet .hide with callback #2
+	.hide('${1:slow/fast/800}', function() {
+		${2:// stuff to do *after* the animation takes place}
+	});
+
+snippet .hover
+	.hover(function() {
+		${1:// Stuff to do when the mouse enters the element;}
+	}, function() {
+		${2:// Stuff to do when the mouse leaves the element;}
+	});
+
+snippet .html
+	.html('${1:Some text <b>and bold!</b>}')
+
+snippet .insertAfter
+	.insertAfter('${1:selector expression}')
+
+snippet .insertBefore
+	.insertBefore('${1:selector expression}')
+
+snippet .is
+	.is('${1:selector expression}')
+
+snippet .load #1
+	.load(function() {
+		${1:// act on the event}
+	});
+
+snippet .load with path to file #2
+	.load('${1:/path/to/file.htm}', {
+		${2:param1}: "${3:value1}", ${4:param2}: "${5:value2}",
+		function() {
+			${6:// stuff to do after the page is loaded}
+		}	
+	});
+
+snippet .wrap
+	.wrap('<div class="extra-wrapper"></div>')
+	
